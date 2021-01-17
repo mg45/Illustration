@@ -72,6 +72,9 @@ input:checked+.slider:before {
 /*----------------------------------------
   Default Styles
 ----------------------------------------*/
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     margin: 0 0;
