@@ -87,6 +87,7 @@ p {
 }
 
 a {
+    color: #000;
     text-decoration: none;
 }
 
@@ -122,6 +123,11 @@ h1 {
     color: #202020;
 }
 
+img:hover {
+    box-shadow: 0px 2px 5px #202020;
+    transition: 0.6s ease-out;
+}
+
 /*----------------------------------------
   Nav
 ----------------------------------------*/
@@ -153,6 +159,8 @@ nav>ul>li {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 5% center;
+    transition-delay: 1s;
+    transition-property: background-image;
 }
 
 section:nth-of-type(1)>div {
@@ -310,6 +318,7 @@ section:nth-of-type(8)>div>span:first-of-type {
 
 footer {
     text-align: center;
+    margin-bottom: 5%;
 }
 
 footer span {
@@ -375,4 +384,13 @@ footer>ul>li:nth-of-type(4):before {
 .dark-mode {
     background-color: black;
     color: white;
+    transition: background-color 1s ease-out;
+}
+
+.link-dark {
+    color: white;
+}
+
+.link-light {
+    color: black;
 }
